@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MYield Frontend | Moonbearer
 
-## Getting Started
+This is the repository for the frontend of [MYield](https://myield.vercel.app) -- built for the Moonbearer hackathon.
 
-First, run the development server:
+## What is MYield?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+MYield is a yield engine for Moonbeam. Designed to power risk-free yield for a selected asset based on the MYield protocol's usage.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Currently, MYield provides -
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Moonwell Lending Vault for USDC.
+- iBTC Risk-Free Yield Vault. The yield is sourced as a % of rewards from the lending vault.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## It's built using:
 
-## Learn More
+1. NextJS App Router.
+2. TailwindCSS
+3. wagmi
+4. viem
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+DM me on twitter [@manangouhari](https://twitter.com/manangouhari)

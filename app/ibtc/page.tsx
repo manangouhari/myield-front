@@ -291,7 +291,7 @@ export default function Home() {
           </p>
         )}
 
-        <div className="flex justify-betwe`en items-center mt-6">
+        <div className="flex justify-between items-center mt-6">
           <div className="">
             <p className="text-xs uppercase text-gray-500 font-bold">
               USDC Rewards
