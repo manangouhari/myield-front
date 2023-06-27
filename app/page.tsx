@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div>
       <h1 className="text-3xl font-bold">
-        Beautiful yield for $iBTC and $USDC
+        Yield engine public good on Moonbeam.
       </h1>
-      <hr />
+
       <h3 className="text-2xl font-semibold mt-10">
         Risk-free yield for $iBTC
       </h3>
@@ -18,6 +18,11 @@ export default function Home() {
         Earn yield on your $iBTC funded from the protocol&apos;s usage. <br />
         The Moonwell Lending vaults for other assets donate 10% of their yield
         for $iBTC.
+        <br />
+        <b>
+          The $iBTC is NOT deposited in any other protocol -- the yield is
+          native to MYield.
+        </b>
       </p>
       <h3 className="text-2xl font-semibold mt-10">Moonwell Lending Vaults</h3>
 

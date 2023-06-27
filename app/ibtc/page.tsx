@@ -285,13 +285,13 @@ export default function Home() {
       </div>
       <div className="w-[400px] border shadow-sm mx-auto p-8">
         <h3 className="text-lg font-bold">Trigger auto-compound</h3>
-        {pendingUSDCRewards == BigInt(0) && (
+        {pendingUSDCRewards < BigInt(1e6) && (
           <p className="text-red-600 text-sm mt-1">
-            No pending rewards to compound.
+            Compound only when pending rewards more than 1 USDC
           </p>
         )}
 
-        <div className="flex justify-between items-center mt-6">
+        <div className="flex justify-betwe`en items-center mt-6">
           <div className="">
             <p className="text-xs uppercase text-gray-500 font-bold">
               USDC Rewards
@@ -299,9 +299,9 @@ export default function Home() {
             <p>{formatUnits(pendingUSDCRewards, 6)}</p>
           </div>
           <button
-            disabled={pendingUSDCRewards === BigInt(0)}
+            disabled={pendingUSDCRewards < BigInt(1e6)}
             className={`w-1/4 bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ${
-              pendingUSDCRewards == BigInt(0) && "bg-indigo-400"
+              pendingUSDCRewards < BigInt(1e6) && "bg-indigo-400"
             }`}
             onClick={onHarvest}
           >
